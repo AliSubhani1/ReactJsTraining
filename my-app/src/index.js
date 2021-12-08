@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import ToDoList from "./TodoList";
 ReactDOM.render(
   <React.StrictMode>
-    <ToDoList />
+    {/* <ToDoList /> */}
     <App />
   </React.StrictMode>,
   document.getElementById("root")
