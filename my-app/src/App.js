@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
+import { CardList } from "./components/card-list/card-list.component";
+import { Card } from "./components/card/card.component";
 import "./App.css";
 
 class App extends Component {
@@ -17,9 +19,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {this.state.Monsters.map((monster) => (
-          <h1 key={monster.id}>{monster.name}</h1>
-        ))}
+        <CardList Monsters={this.state.Monsters}></CardList>
       </div>
     );
   }
